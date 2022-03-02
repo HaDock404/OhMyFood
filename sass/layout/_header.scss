@@ -1,29 +1,79 @@
-nav {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: stretch;
-  box-shadow: 0 0 5px 0 black;
+header {
+  background-color: #eaeaea;
+  nav {
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    box-shadow: 0 0 5px 0 black;
+    .logo {
+      width: 50%;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  .localisation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    &_city {
+      padding-top: 5px;
+      display: flex;
+      flex-direction: row;
+      &--spacing {
+        padding-left: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+  .introduction {
+    background-color: $color-back;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    &_btn {
+      background-color: $color-primary;
+      color: $color-white;
+      border: 0px solid;
+      margin-bottom: 40px;
+      box-shadow: 2px 4px 5px #b5b2b2;
+    }
+    &_title {
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 0px;
+      padding-left: 60px;
+      padding-right: 60px;
+      line-height: 30px;
+    }
+    &_catch {
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      color: #606060;
+    }
+  }
 }
 
-.logo {
-  width: 50%;
-  background-color: yellow;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.localisation {
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: stretch;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.btn {
+  border: 2px solid black;
+  background-color: $color-primary;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  border-radius: 50px;
 }

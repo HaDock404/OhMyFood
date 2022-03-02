@@ -1,9 +1,13 @@
 body {
   background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
-nav {
-  background-color: red;
+header {
+  background-color: #eaeaea;
+}
+header nav {
+  background-color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -12,24 +16,187 @@ nav {
   align-content: stretch;
   box-shadow: 0 0 5px 0 black;
 }
-
-.logo {
+header nav .logo {
   width: 50%;
-  background-color: yellow;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-
-.localisation {
-  background-color: blue;
+header .localisation {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
   align-content: stretch;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 10px;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+header .localisation_city {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+header .localisation_city--spacing {
+  padding-left: 15px;
+  font-weight: bold;
+}
+header .introduction {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+header .introduction_btn {
+  background-color: #9356dc;
+  color: white;
+  border: 0px solid;
+  margin-bottom: 40px;
+  box-shadow: 2px 4px 5px #b5b2b2;
+}
+header .introduction_title {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 30px;
+}
+header .introduction_catch {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #606060;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: #9356dc;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+.fonctionnement_list {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  margin-top: 40px;
+}
+.fonctionnement h2 {
+  width: 100%;
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+.fonctionnement ul {
+  list-style-type: none;
+  padding-left: 0px;
+  width: 90%;
+}
+.fonctionnement a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 2px 4px 10px #e3e3e3;
+}
+
+footer {
+  background-color: #353535;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+footer h4 {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+footer ul {
+  list-style: none;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+footer li {
+  margin-top: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .bold {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+.restaurants h2 {
+  width: 100%;
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+.restaurants ul {
+  background-color: blue;
+  list-style-type: none;
+  padding-left: 0px;
+  width: 90%;
+}
+.restaurants a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants li {
+  background-color: yellow;
+  margin-top: 10px;
+  width: 100%;
+  height: 230px;
+  border-radius: 14px 14px 14px 14px;
+}
+.restaurants img {
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px 14px 0 0;
+  object-fit: cover;
+}
+.restaurants h3 {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

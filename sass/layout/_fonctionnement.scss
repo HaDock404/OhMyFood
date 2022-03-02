@@ -1,0 +1,40 @@
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  &_list {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-top: 40px;
+  }
+  h2 {
+    width: 100%;
+    padding-left: 25px;
+    margin-bottom: 0px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+    width: 90%;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: $color-back;
+    box-shadow: 2px 4px 10px $color-shadow;
+  }
+}
