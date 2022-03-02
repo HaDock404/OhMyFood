@@ -5,11 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Différents métatags pour l'intégration dans facebook-->
+    <meta property="og:title" content="Title Here"/> <!--Le titre de la page-->
+    <meta property="og:type" content="website"/> <!--Le type de site-->
+    <meta property="og:url" content="http://www.example.com/"/> <!--Url à afficher-->
+    <meta property="og:image" content="http://example.com/image.jpg"/> <!--L'image optimisée pour facebook-->
+    <meta property="og:description" content="Description Here"/> <!--Description pour facebook-->
+    <!--le debuggeur en cas de problème : https://developers.facebook.com/tools/debug/-->
+
+    <!-- Différents métatags pour l'intégration dans Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle"> <!-- Compte Twitter du site-->
+    <meta name="twitter:title" content="Page Title"> <!-- Titre de la page-->
+    <meta name="twitter:description" content="Page description less than 200 characters"> <!-- description inférieur à 200 caractère-->
+    <meta name="twitter:creator" content="@author_handle"> <!-- auteur-->
+    <meta name="twitter:image" content="http://www.example.com/image.jpg"> <!-- image inférieure à 200x200px-->
+
+    <link rel="stylesheet" href="./public/css/normalize.css"> <!-- Permet de normaliser le style suivant les différents navigateur-->
     <link rel="stylesheet" href="./public/css/style.css">
 
     <title>Oh My Food</title>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <img class="logo" src="public/img/logo/ohmyfood@2x.svg" alt="">
+        </nav>
+
+        <div class="localisation">
+            <div>Paris, Belleville</div>
+        </div>
+
+        <div>
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <div>Explorez nos restaurants</div>
+        </div>
+
+    </header>
+
+    <article>
+        <h2>Fonctionnement</h2>
+        <ol>
+            <li>Choissisez un restaurant</li>
+            <li>Composez votre menu</li>
+            <li>Dégustez au restaurant</li>
+        </ol>
+    </article>
+
+    <article>
+        <h2>Restaurants</h2>
+
+        <ul>
+            <li>Box</li>
+            <li>Box</li>
+            <li>Box</li>
+            <li>Box</li>
+        </ul>
+    </article>
+
+    <footer>
+        <h4>ohmyfood</h4>
+        <ul>
+            <li>Proposer un restaurant</li>
+            <li>Devenir partenaire</li>
+            <li>Mentions légales</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
     
 </body>
 </html>
