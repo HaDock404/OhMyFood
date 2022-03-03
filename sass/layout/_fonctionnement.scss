@@ -5,36 +5,47 @@
   justify-content: flex-start;
   align-items: center;
   align-content: stretch;
-  &_list {
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    margin-top: 40px;
-  }
+  padding-top: 30px;
+  padding-bottom: 50px;
   h2 {
     width: 100%;
     padding-left: 25px;
     margin-bottom: 0px;
   }
   ul {
-    list-style-type: none;
+    list-style: none;
     padding-left: 0px;
     width: 90%;
   }
   a {
     text-decoration: none;
     color: black;
+    height: 70px;
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    padding-left: 20px;
     margin-top: 20px;
     border-radius: 20px;
     background-color: $color-back;
     box-shadow: 2px 4px 10px $color-shadow;
+  }
+  &_choice {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-right: 20px;
+    &--number {
+      position: relative;
+      left: 5px;
+    }
+    &--icon {
+      color: $color-txt;
+    }
+    &--txt {
+      font-weight: bold;
+    }
   }
 }
