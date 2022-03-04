@@ -8,7 +8,7 @@
   padding-top: 30px;
   padding-bottom: 50px;
   h2 {
-    width: 100%;
+    width: 90%;
     padding-left: 25px;
     margin-bottom: 0px;
   }
@@ -26,6 +26,7 @@
     text-align: center;
     justify-content: space-around;
     margin-top: 20px;
+    margin-left: 15px;
     border-radius: 20px;
     background-color: $color-back;
     box-shadow: 2px 4px 10px $color-shadow;
@@ -34,18 +35,27 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 27px;
     padding-right: 20px;
     &--number {
-      position: relative;
-      left: 5px;
+      position: absolute;
+      background-color: $color-primary;
+      color: $color-white;
+      width: 25px;
+      height: 20px;
+      padding-top: 4px;
+      border-radius: 20px;
+      left: 20px;
+      margin-top: 0px;
     }
     &--icon {
       color: $color-txt;
+      margin-left: 2rem;
     }
     &--txt {
       font-weight: bold;
+      margin-left: 2rem;
     }
   }
 }

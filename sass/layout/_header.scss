@@ -45,7 +45,12 @@ header {
     align-items: center;
     align-content: stretch;
     &_btn {
-      background-color: $color-primary;
+      background: rgb(147, 86, 220);
+      background: linear-gradient(
+        0deg,
+        rgba(147, 86, 220, 1) 0%,
+        rgba(255, 121, 218, 1) 100%
+      );
       color: $color-white;
       border: 0px solid;
       margin-bottom: 40px;
