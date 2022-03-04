@@ -244,4 +244,87 @@ footer .bold {
   font-size: 20px;
 }
 
+.menu {
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+.menu img {
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: 0px;
+  position: absolute;
+}
+.menu section {
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin-top: 0px;
+  position: absolute;
+  top: 170px;
+  border-radius: 40px 40px 0 0;
+}
+.menu section h1 {
+  width: 90%;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.menu section .title {
+  display: flex;
+  flex-direction: rows;
+}
+.menu section .title_icon {
+  color: #606060;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+.menu section ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.menu section .dish {
+  width: 100%;
+}
+.menu section .dish h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #606060;
+  width: 40px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 5px;
+}
+.menu section .dish_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.menu section .dish_list--organisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 4px 10px #e3e3e3;
+  padding-left: 1rem;
+  margin-bottom: 15px;
+}
+.menu section .dish_list--organisation h3 {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.menu section .dish_list--organisation p {
+  font-size: 0.9rem;
+}
+.menu section .dish_list--organisation span {
+  padding-right: 1rem;
+  padding-top: 2.7rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
