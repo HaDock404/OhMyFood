@@ -1,3 +1,14 @@
+.btn {
+  background: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  color: white;
+  border: 0px solid;
+  box-shadow: 2px 4px 5px #b5b2b2;
+  text-align: center;
+  border-radius: 50px;
+  padding: 15px;
+}
+
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -5,6 +16,7 @@ body {
 
 header {
   background-color: #eaeaea;
+  position: relative;
 }
 header nav {
   background-color: white;
@@ -20,6 +32,12 @@ header nav .logo {
   width: 50%;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+header .back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #606060;
 }
 header .localisation {
   display: flex;
@@ -52,12 +70,7 @@ header .introduction {
   align-content: stretch;
 }
 header .introduction_btn {
-  background: #9356dc;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  color: white;
-  border: 0px solid;
   margin-bottom: 40px;
-  box-shadow: 2px 4px 5px #b5b2b2;
 }
 header .introduction_title {
   text-align: center;
@@ -73,15 +86,6 @@ header .introduction_catch {
   padding-left: 30px;
   padding-right: 30px;
   color: #606060;
-}
-
-.btn {
-  border: 2px solid black;
-  background-color: #9356dc;
-  padding: 15px;
-  color: black;
-  text-align: center;
-  border-radius: 50px;
 }
 
 .fonctionnement {
@@ -249,19 +253,17 @@ footer .bold {
   margin-bottom: 0px;
   padding-bottom: 0px;
   position: relative;
-}
-.menu img {
-  object-fit: contain;
-  width: 100%;
-  margin-bottom: 0px;
-  position: absolute;
+  padding-top: 180px;
+  background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 .menu section {
   background-color: #f6f6f6;
   padding: 20px;
   margin-top: 0px;
-  position: absolute;
-  top: 170px;
   border-radius: 40px 40px 0 0;
 }
 .menu section h1 {
@@ -315,16 +317,33 @@ footer .bold {
 .menu section .dish_list--organisation h3 {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
-  font-size: 1.1rem;
-}
-.menu section .dish_list--organisation p {
   font-size: 0.9rem;
+}
+.menu section .dish_list--organisation div {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 10px;
 }
 .menu section .dish_list--organisation span {
   padding-right: 1rem;
   padding-top: 2.7rem;
   font-size: 0.9rem;
   font-weight: bold;
+}
+.menu_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.menu_btn .btn {
+  width: 180px;
 }
 
 /*# sourceMappingURL=style.css.map */

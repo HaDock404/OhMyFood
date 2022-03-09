@@ -1,5 +1,6 @@
 header {
   background-color: #eaeaea;
+  position: relative;
   nav {
     background-color: $color-white;
     display: flex;
@@ -14,6 +15,12 @@ header {
       margin-top: 20px;
       margin-bottom: 10px;
     }
+  }
+  .back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: $color-txt;
   }
   .localisation {
     display: flex;
@@ -45,16 +52,7 @@ header {
     align-items: center;
     align-content: stretch;
     &_btn {
-      background: rgb(147, 86, 220);
-      background: linear-gradient(
-        0deg,
-        rgba(147, 86, 220, 1) 0%,
-        rgba(255, 121, 218, 1) 100%
-      );
-      color: $color-white;
-      border: 0px solid;
       margin-bottom: 40px;
-      box-shadow: 2px 4px 5px #b5b2b2;
     }
     &_title {
       text-align: center;
@@ -72,13 +70,4 @@ header {
       color: $color-txt;
     }
   }
-}
-
-.btn {
-  border: 2px solid black;
-  background-color: $color-primary;
-  padding: 15px;
-  color: black;
-  text-align: center;
-  border-radius: 50px;
 }
