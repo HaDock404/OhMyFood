@@ -1,0 +1,77 @@
+@keyframes bouge {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disparition {
+  0% {
+  }
+  100% {
+    transform: translateY(-9999px);
+  }
+}
+
+@keyframes chargement-home {
+  0% {
+    opacity: 0.1;
+    transform: rotate(180deg);
+  }
+  15% {
+    opacity: 0.3;
+    transform: rotate(-90deg);
+  }
+  40% {
+    opacity: 0.5;
+    transform: rotate(60deg);
+  }
+  65% {
+    opacity: 0.8;
+    transform: rotate(-45deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(25deg);
+  }
+  85% {
+    transform: rotate(-15deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: translateY(-90vh);
+  }
+}
+
+.page_chargement {
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+  margin-bottom: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  background-color: $color-tertiary;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  animation: bouge 3100ms forwards;
+  animation: disparition 0ms 3090ms forwards;
+  transform-origin: top left;
+
+  .barre_home {
+    width: 200px;
+    height: 30px;
+    padding: 2px;
+    animation: chargement-home 3000ms forwards;
+  }
+}

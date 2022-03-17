@@ -18,7 +18,7 @@
   }
 }
 
-.menu {
+.menu1 {
   width: 100%;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -29,126 +29,197 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  section {
-    background-color: $color-back;
-    padding: 20px;
-    margin-top: 0px;
-    border-radius: 40px 40px 0 0;
-    h1 {
-      width: 90%;
-      font-family: $font-title;
-      font-size: 1.5rem;
-      font-weight: 100;
-    }
-    .title {
-      display: flex;
-      flex-direction: rows;
-      &_icon {
-        color: $color-txt;
-        font-size: 1.5rem;
-        padding-top: 15px;
-      }
-    }
-    ul {
-      list-style: none;
-      margin: 0px;
-      padding: 0px;
-    }
-    .dish {
-      width: 100%;
-      h2 {
-        text-transform: uppercase;
-        font-size: 1rem;
-        color: $color-txt;
-        width: 40px;
-        font-weight: 400;
-        border-bottom: 3px solid $color-tertiary;
-        padding-bottom: 5px;
-      }
-      &_list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        &--organisation {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          background-color: $color-white;
-          border-radius: 15px;
-          box-shadow: 2px 4px 10px $color-shadow;
-          padding-left: 1rem;
-          margin-bottom: 15px;
-          opacity: 0;
-          cursor: pointer;
-          overflow: hidden;
-          position: relative;
-          &:hover {
-            & > .valide2 {
-              transform: translateX(-60px);
-            }
-            & span {
-              transform: translate(-60px);
-            }
-            & .gap {
-              animation: gap 630ms forwards;
-            }
-            & .checked {
-              transform: rotate(360deg);
-            }
-          }
-          h3 {
-            margin-bottom: 0.5rem;
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            text-overflow: ellipsis;
-            width: 90%;
-            display: block;
-            overflow: hidden;
-          }
-          div {
-            font-size: 0.9rem;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 90%;
-            display: block;
-            overflow: hidden;
-            padding-bottom: 10px;
-          }
-          span {
-            padding-right: 1rem;
-            padding-top: 2.7rem;
-            font-size: 0.9rem;
-            font-weight: bold;
-            transition: transform 630ms;
-          }
-        }
+}
 
-        .valide2 {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          background-color: $color-tertiary;
-          transition: transform 630ms;
-          position: absolute;
-          right: -60px;
-          height: 100%;
-          width: 60px;
+.menu2 {
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  padding-top: 180px;
+  background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu3 {
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  padding-top: 180px;
+  background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.menu4 {
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  padding-top: 180px;
+  background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+section {
+  background-color: $color-back;
+  padding: 20px;
+  margin-top: 0px;
+  border-radius: 40px 40px 0 0;
+  h1 {
+    width: 90%;
+    font-family: $font-title;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  .title {
+    display: flex;
+    flex-direction: rows;
+    &_icon {
+      color: $color-txt;
+      font-size: 1.5rem;
+      padding-top: 15px;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  .dish {
+    width: 100%;
+    h2 {
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: $color-txt;
+      width: 40px;
+      font-weight: 400;
+      border-bottom: 3px solid $color-tertiary;
+      padding-bottom: 5px;
+    }
+    &_list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      &--organisation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $color-white;
+        border-radius: 15px;
+        box-shadow: 2px 4px 10px $color-shadow;
+        padding-left: 1rem;
+        margin-bottom: 15px;
+        opacity: 0;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        &:hover {
+          & > .valide2 {
+            transform: translateX(-60px);
+          }
+          & span {
+            transform: translate(-60px);
+          }
+          & .gap {
+            animation: gap 630ms forwards;
+          }
+          & .checked {
+            transform: rotate(360deg);
+          }
         }
+        h3 {
+          margin-bottom: 0.5rem;
+          margin-top: 1rem;
+          font-size: 0.9rem;
+          text-overflow: ellipsis;
+          width: 90%;
+          display: block;
+          overflow: hidden;
+        }
+        div {
+          font-size: 0.9rem;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 90%;
+          display: block;
+          overflow: hidden;
+          padding-bottom: 10px;
+        }
+        span {
+          padding-right: 1rem;
+          padding-top: 2.7rem;
+          font-size: 0.9rem;
+          font-weight: bold;
+          transition: transform 630ms;
+        }
+      }
+
+      .valide2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        transition: transform 630ms;
+        position: absolute;
+        right: -60px;
+        height: 100%;
+        width: 60px;
       }
     }
   }
-  &_btn {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    .btn {
-      width: 180px;
-    }
+}
+.menu1_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  .btn {
+    width: 180px;
+  }
+}
+.menu2_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  .btn {
+    width: 180px;
+  }
+}
+.menu3_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  .btn {
+    width: 180px;
+  }
+}
+.menu4_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  .btn {
+    width: 180px;
   }
 }
 
@@ -165,6 +236,11 @@
 .dish_list .dish_list--organisation:nth-child(3) {
   animation: appearance 1000ms forwards;
   animation-delay: 1s;
+}
+
+.dish_list .dish_list--organisation:nth-child(4) {
+  animation: appearance 1000ms forwards;
+  animation-delay: 1.5s;
 }
 
 .checked {
