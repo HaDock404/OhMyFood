@@ -14,7 +14,7 @@
   0% {
   }
   100% {
-    transform: translateY(-9999px);
+    transform: translateY(-9999vh);
   }
 }
 
@@ -59,7 +59,7 @@
   justify-content: center;
   flex-direction: column-reverse;
   background-color: $color-tertiary;
-  height: 100vh;
+  height: 1000vh;
   position: absolute;
   z-index: 10;
   width: 100%;
@@ -67,6 +67,9 @@
   animation: bouge 3100ms forwards;
   animation: disparition 0ms 3090ms forwards;
   transform-origin: top left;
+  position: fixed;
+  top: 50%;
+  margin-top: -50px;
 
   .barre_home {
     width: 200px;

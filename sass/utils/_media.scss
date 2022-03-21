@@ -1,0 +1,133 @@
+@mixin menu-tablet {
+  padding-top: 400px;
+  .dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dish_list--organisation {
+    width: 400px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@mixin menu-laptop {
+  padding-top: 550px;
+}
+
+@mixin menu-L {
+  padding-top: 800px;
+}
+
+@mixin menu-smartphone {
+  padding-top: 210px;
+}
+
+@media (min-width: 375px) {
+  .menu1 {
+    @include menu-smartphone;
+  }
+  .menu2 {
+    @include menu-smartphone;
+  }
+  .menu3 {
+    @include menu-smartphone;
+  }
+  .menu4 {
+    @include menu-smartphone;
+  }
+}
+
+@media (min-width: 767px) {
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+  .fonctionnement {
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .pointer {
+      width: 300px;
+    }
+  }
+  .restaurants {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    li {
+      height: 300px;
+      width: 700px;
+      margin-bottom: 30px;
+    }
+    img {
+      height: 75%;
+    }
+    .new {
+      top: -180px;
+    }
+  }
+  .menu1 {
+    @include menu-tablet;
+  }
+  .menu2 {
+    @include menu-tablet;
+  }
+  .menu3 {
+    @include menu-tablet;
+  }
+  .menu4 {
+    @include menu-tablet;
+  }
+  .title {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .fonctionnement {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    li {
+      margin-left: 20px;
+    }
+  }
+  .menu1 {
+    @include menu-laptop;
+  }
+  .menu2 {
+    @include menu-laptop;
+  }
+  .menu3 {
+    @include menu-laptop;
+  }
+  .menu4 {
+    @include menu-laptop;
+  }
+}
+
+@media (min-width: 1390px) {
+  .menu1 {
+    @include menu-L;
+  }
+  .menu2 {
+    @include menu-L;
+  }
+  .menu3 {
+    @include menu-L;
+  }
+  .menu4 {
+    @include menu-L;
+  }
+}
