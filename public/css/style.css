@@ -341,14 +341,13 @@ footer .bold {
 }
 .restaurants_name--like:hover .heartColor {
   opacity: 1;
-  color: #9356dc;
-  color: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
 
 .heartColor {
   opacity: 0;
   position: absolute;
   right: 20px;
+  color: #9356dc;
 }
 
 .photo {
@@ -450,7 +449,7 @@ section h1 {
 }
 section .title {
   display: flex;
-  flex-direction: rows;
+  flex-direction: row;
   justify-content: space-between;
 }
 section .title_icon {

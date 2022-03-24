@@ -60,7 +60,7 @@ section {
   }
   .title {
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     justify-content: space-between;
     &_icon {
       color: $color-txt;
