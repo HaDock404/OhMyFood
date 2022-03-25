@@ -8,6 +8,12 @@
   text-align: center;
   border-radius: 50px;
   padding: 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #9356dc;
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.75) 0%, rgba(255, 121, 218, 0.75) 100%);
+  box-shadow: 5px 8px 5px #838383;
 }
 
 body {
