@@ -140,9 +140,23 @@ header .localisation_city {
   display: flex;
   flex-direction: row;
 }
+header .localisation_city .icon {
+  margin-left: 100px;
+  padding-top: 3px;
+  font-size: 1.05em;
+}
 header .localisation_city--spacing {
-  padding-left: 15px;
+  padding-left: 5px;
+  font-size: 16px;
   font-weight: bold;
+  color: black;
+  border: none;
+  height: 20px;
+  background-color: #eaeaea;
+}
+header .localisation_city input::placeholder {
+  color: black;
+  opacity: 1;
 }
 header .introduction {
   background-color: #f6f6f6;

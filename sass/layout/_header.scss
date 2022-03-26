@@ -37,9 +37,23 @@ header {
       padding-top: 5px;
       display: flex;
       flex-direction: row;
+      .icon {
+        margin-left: 100px;
+        padding-top: 3px;
+        font-size: 1.05em;
+      }
       &--spacing {
-        padding-left: 15px;
+        padding-left: 5px;
+        font-size: 16px;
         font-weight: bold;
+        color: black;
+        border: none;
+        height: 20px;
+        background-color: #eaeaea;
+      }
+      input::placeholder {
+        color: black;
+        opacity: 1;
       }
     }
   }
